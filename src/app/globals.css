@@ -1,0 +1,182 @@
+@import "tailwindcss";
+
+@theme {
+  --color-farm-green: var(--farm-green);
+  --color-farm-yellow: var(--farm-yellow);
+  --color-farm-blue: var(--farm-blue);
+  --color-farm-cream: var(--farm-cream);
+  
+  --animate-bounce-slow: bounce-slow 3s ease-in-out infinite;
+  --animate-float: float-slow 5s ease-in-out infinite;
+  --animate-cloud-drift: cloud-drift 40s linear infinite;
+}
+
+:root {
+  --background: #FFFFFF;
+  --bg-gradient-end: #FFFFFF;
+  --foreground: #0F172A;
+  --text-primary: #0F172A;
+  --text-secondary: #065F46;
+  
+  --farm-green: #10B981;
+  --farm-yellow: #F59E0B;
+  --farm-blue: #0ea5e9;
+  --farm-cream: #FFFFFF;
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(15, 23, 42, 0.08);
+  --glass-shadow: rgba(15, 23, 42, 0.04);
+  --dot-color: rgba(16, 185, 129, 0.06);
+  --grid-color: rgba(15, 23, 42, 0.01);
+  --phone-border: #0F172A;
+}
+
+.dark {
+  --background: #05070A;
+  --bg-gradient-end: #0B0F17;
+  --foreground: #F8FAFC;
+  --text-primary: #F8FAFC;
+  --text-secondary: #94A3B8;
+  
+  --farm-green: #34D399; /* Neon Emerald */
+  --farm-yellow: #06B6D4; /* Vibrant Cyan */
+  --farm-blue: #06B6D4;
+  --farm-cream: #0B0F17;
+  --glass-bg: rgba(30, 41, 59, 0.8); /* Glassmorphism Dark Slate */
+  --glass-border: rgba(52, 211, 153, 0.2); /* border-emerald-500/20 */
+  --glass-shadow: rgba(0, 0, 0, 0.5);
+  --dot-color: rgba(6, 182, 212, 0.08);
+  --grid-color: rgba(255, 255, 255, 0.01);
+  --phone-border: #1E293B;
+}
+
+body {
+  background-color: var(--background);
+  background-image: linear-gradient(180deg, var(--background) 0%, var(--bg-gradient-end) 100%);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Video Hardware Acceleration */
+video {
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Custom Friendly Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--farm-cream);
+  transition: background-color 0.5s ease;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(16, 185, 129, 0.2);
+  border-radius: 9999px;
+  border: 2px solid var(--farm-cream);
+  transition: background-color 0.5s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(16, 185, 129, 0.4);
+}
+
+/* Animations */
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(-5%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1deg); }
+}
+
+@keyframes cloud-drift {
+  0% { transform: translateX(-10%); }
+  100% { transform: translateX(110%); }
+}
+
+/* Farm-friendly Utilities */
+.shadow-farm {
+  box-shadow: 0 16px 40px -10px var(--glass-shadow), 0 4px 12px -2px var(--glass-shadow);
+  transition: box-shadow 0.5s ease;
+}
+
+.shadow-farm-lg {
+  box-shadow: 0 25px 60px -15px var(--glass-shadow), 0 8px 24px -5px var(--glass-shadow);
+  transition: box-shadow 0.5s ease;
+}
+
+.glass-bubble {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 2px solid var(--glass-border);
+  box-shadow: 0 16px 32px 0 var(--glass-shadow);
+  transition: background-color 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.bg-dot-pattern {
+  background-image: radial-gradient(var(--dot-color) 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+  transition: background-image 0.5s ease;
+}
+
+.bg-grid-farm {
+  background-image: 
+    linear-gradient(var(--grid-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+  background-size: 30px 30px;
+  transition: background-image 0.5s ease;
+}
+
+.text-farm-gradient {
+  background: linear-gradient(135deg, #10B981 0%, #047857 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Smartphone Device Mockup styling */
+.phone-mockup {
+  border: 14px solid var(--phone-border);
+  border-radius: 42px;
+  box-shadow: 
+    0 25px 60px -15px var(--glass-shadow), 
+    inset 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: var(--farm-cream);
+  transition: border-color 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.phone-notch {
+  width: 130px;
+  height: 22px;
+  background: var(--phone-border);
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 30;
+  transition: background-color 0.5s ease;
+}
+
+.phone-screen-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 28px;
+}
