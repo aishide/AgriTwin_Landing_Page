@@ -1,36 +1,143 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌾 AgriTwin OS — Landing Page
 
-## Getting Started
+A modern, interactive landing page for **AgriTwin OS**, an intelligent digital agriculture platform designed to help farmers make smarter, data-driven decisions.
 
-First, run the development server:
+The landing page presents the AgriTwin OS vision through an immersive visual experience, combining interactive storytelling, agricultural imagery, and a modern responsive interface.
+
+## ✨ Features
+
+* 🌱 Modern agricultural-focused landing page
+* 🎞️ Interactive farmer visual storytelling
+* 🖼️ Frame-by-frame farmer animation
+* 📱 Responsive design across devices
+* ⚡ Fast and optimized Next.js application
+* 🧩 Reusable React components
+* 🎨 Custom styling and animations
+* 🧭 Interactive navigation
+* 🎥 Video/frame scrubbing experience
+
+## 🛠️ Tech Stack
+
+* **Next.js**
+* **React**
+* **TypeScript**
+* **CSS**
+* **Node.js**
+* **npm**
+
+## 📁 Project Structure
+
+```text
+AgriTwin_Landing_Page/
+│
+├── public/
+│   ├── farmer-frames/
+│   │   ├── ezgif-frame-001.jpg
+│   │   ├── ezgif-frame-002.jpg
+│   │   └── ...
+│   └── ...
+│
+├── src/
+│   ├── app/
+│   │   ├── favicon.ico
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   │
+│   └── components/
+│       ├── Footer.tsx
+│       ├── Navbar.tsx
+│       ├── ScrollytellingCanvas.tsx
+│       └── VideoScrubber.tsx
+│
+├── .gitignore
+├── package.json
+├── package-lock.json
+├── next.config.ts
+├── postcss.config.mjs
+├── eslint.config.mjs
+├── tsconfig.json
+└── README.md
+```
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/aishide/AgriTwin_Landing_Page.git
+```
+
+### 2. Navigate to the project
+
+```bash
+cd AgriTwin_Landing_Page
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 5. Open in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Visit:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```text
+http://localhost:3000
+```
 
-## Learn More
+## 🎨 Development
 
-To learn more about Next.js, take a look at the following resources:
+The main landing page can be modified from:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```text
+src/app/page.tsx
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Global styles are located in:
 
-## Deploy on Vercel
+```text
+src/app/globals.css
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Reusable UI components are located in:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```text
+src/components/
+```
+
+The farmer animation assets are stored in:
+
+```text
+public/farmer-frames/
+```
+
+## 🌾 About AgriTwin OS
+
+AgriTwin OS is envisioned as a digital agriculture ecosystem that uses technology and data to create smarter, more informed farming experiences.
+
+This landing page serves as the visual introduction to the platform and its capabilities.
+
+## 📌 Project Status
+
+🚧 **Currently in development**
+
+The landing page and interactive experience are being actively developed and refined.
+
+## 👩‍💻 Author
+
+**Aishi De**
+
+GitHub: [@aishide](https://github.com/aishide)
+
+---
+
+⭐ If you find this project interesting, consider giving the repository a star!
