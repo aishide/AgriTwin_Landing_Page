@@ -1,143 +1,317 @@
-# 🌾 AgriTwin OS — Landing Page
+🌱 AgriTwin
 
-A modern, interactive landing page for **AgriTwin OS**, an intelligent digital agriculture platform designed to help farmers make smarter, data-driven decisions.
+<p align="center">
+  <img src="https://img.shields.io/badge/AgriTwin-Smart%20Agriculture-4CAF50?style=for-the-badge" alt="AgriTwin">
+  <img src="https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js" alt="Next.js">
+  <img src="https://img.shields.io/badge/TypeScript-blue?style=for-the-badge&logo=typescript" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" alt="Status">
+</p>
+<h3 align="center">
+  🌾 Reimagining Agriculture Through Digital Intelligence
+</h3>
+<p align="center">
+  AgriTwin is a modern digital agriculture experience designed to visualize,<br>
+  understand, and interact with the future of smart farming.
+</p>
+<p align="center">
+  <a href="https://github.com/aishide/AgriTwin_Landing_Page">View Repository</a>
+  ·
+  <a href="#-features">Features</a>
+  ·
+  <a href="#-getting-started">Getting Started</a>
+</p>
 
-The landing page presents the AgriTwin OS vision through an immersive visual experience, combining interactive storytelling, agricultural imagery, and a modern responsive interface.
+⸻
 
-## ✨ Features
+🌾 What is AgriTwin?
 
-* 🌱 Modern agricultural-focused landing page
-* 🎞️ Interactive farmer visual storytelling
-* 🖼️ Frame-by-frame farmer animation
-* 📱 Responsive design across devices
-* ⚡ Fast and optimized Next.js application
-* 🧩 Reusable React components
-* 🎨 Custom styling and animations
-* 🧭 Interactive navigation
-* 🎥 Video/frame scrubbing experience
+AgriTwin brings the concept of a Digital Twin for agriculture to life through an immersive web experience.
 
-## 🛠️ Tech Stack
+Instead of presenting agricultural technology through static information, AgriTwin focuses on visual storytelling, interactive experiences, and intuitive design to demonstrate how technology can transform modern farming.
 
-* **Next.js**
-* **React**
-* **TypeScript**
-* **CSS**
-* **Node.js**
-* **npm**
+The platform represents the intersection of:
 
-## 📁 Project Structure
+🌱 Agriculture
+      +
+🤖 Technology
+      +
+📊 Data & Intelligence
+      ↓
+🌾 AgriTwin
 
-```text
-AgriTwin_Landing_Page/
+⸻
+
+✨ Experience AgriTwin
+
+🌱 Immersive Agricultural Storytelling
+
+The landing page uses interactive visual sequences to take users through the agricultural ecosystem.
+
+<p align="center">
+  <img src="./public/preview.gif" alt="AgriTwin Interactive Experience" width="90%">
+</p>
+
+Replace ./public/preview.gif with your actual project preview GIF/video when available.
+
+⸻
+
+🎥 Interactive Visual Experience
+
+One of the core experiences of AgriTwin is its scroll-driven visual storytelling.
+
+As users scroll, the agricultural environment evolves through a sequence of visual frames, creating a dynamic digital-twin experience.
+
+        USER SCROLL
+             │
+             ▼
+     ┌─────────────────┐
+     │  Frame Sequence  │
+     └────────┬────────┘
+              │
+              ▼
+     ┌─────────────────┐
+     │ Scrollytelling  │
+     │     Canvas      │
+     └────────┬────────┘
+              │
+              ▼
+     ┌─────────────────┐
+     │ Visual Changes  │
+     │ & Storytelling  │
+     └────────┬────────┘
+              │
+              ▼
+        🌾 DIGITAL TWIN
+
+This creates a more engaging way of communicating complex agricultural concepts.
+
+⸻
+
+🚀 Features
+
+🌾 Scrollytelling Canvas
+
+A scroll-controlled canvas experience that displays a sequence of agricultural frames and creates an immersive storytelling effect.
+
+🎬 Video Scrubbing
+
+Interactive frame-based video/animation control that responds to the user’s scrolling experience.
+
+🧭 Modern Navigation
+
+A clean navigation system designed to make the landing page easy to explore.
+
+📱 Responsive Experience
+
+Designed to provide a consistent experience across different screen sizes.
+
+🎨 Immersive UI
+
+Visual-first design focused on:
+
+* Smooth transitions
+* Large-scale imagery
+* Interactive sections
+* Modern typography
+* Minimal interface
+* Agricultural visual storytelling
+
+⸻
+
+🧩 Project Architecture
+
+AgriTwin_Landing_Page
 │
-├── public/
-│   ├── farmer-frames/
-│   │   ├── ezgif-frame-001.jpg
-│   │   ├── ezgif-frame-002.jpg
-│   │   └── ...
-│   └── ...
+├── 📁 public
+│   └── 🌾 farmer frames
 │
-├── src/
-│   ├── app/
-│   │   ├── favicon.ico
+├── 📁 src
+│   ├── 📁 app
 │   │   ├── globals.css
 │   │   ├── layout.tsx
 │   │   └── page.tsx
 │   │
-│   └── components/
-│       ├── Footer.tsx
-│       ├── Navbar.tsx
-│       ├── ScrollytellingCanvas.tsx
-│       └── VideoScrubber.tsx
+│   └── 📁 components
+│       ├── Footer
+│       ├── Navbar
+│       ├── ScrollytellingCanvas
+│       └── VideoScrubber
 │
-├── .gitignore
-├── package.json
-├── package-lock.json
-├── next.config.ts
-├── postcss.config.mjs
-├── eslint.config.mjs
-├── tsconfig.json
-└── README.md
-```
+├── 📄 package.json
+├── 📄 tsconfig.json
+└── 📄 README.md
 
-## 🚀 Getting Started
+⸻
 
-### 1. Clone the repository
+🛠️ Tech Stack
 
-```bash
+Technology	Purpose
+⚛️ Next.js	Web application framework
+🔷 TypeScript	Type-safe development
+🎨 CSS	Styling and responsive UI
+🖼️ Canvas	Interactive visual rendering
+🎞️ Frame Animation	Scroll-driven storytelling
+🐙 Git & GitHub	Version control
+
+⸻
+
+⚡ Getting Started
+
+1. Clone the repository
+
 git clone https://github.com/aishide/AgriTwin_Landing_Page.git
-```
 
-### 2. Navigate to the project
+2. Navigate to the project
 
-```bash
 cd AgriTwin_Landing_Page
-```
 
-### 3. Install dependencies
+3. Install dependencies
 
-```bash
 npm install
-```
 
-### 4. Start the development server
+4. Start the development server
 
-```bash
 npm run dev
-```
 
-### 5. Open in your browser
+5. Open in your browser
 
-Visit:
-
-```text
 http://localhost:3000
-```
 
-## 🎨 Development
+⸻
 
-The main landing page can be modified from:
+🖥️ Development
 
-```text
-src/app/page.tsx
-```
+To create a production build:
 
-Global styles are located in:
+npm run build
 
-```text
-src/app/globals.css
-```
+To start the production server:
 
-Reusable UI components are located in:
+npm start
 
-```text
-src/components/
-```
+⸻
 
-The farmer animation assets are stored in:
+📸 Visual Showcase
 
-```text
-public/farmer-frames/
-```
+🌱 Landing Experience
 
-## 🌾 About AgriTwin OS
+<p align="center">
+  <img src="./public/screenshots/home.png" alt="AgriTwin Home" width="90%">
+</p>
 
-AgriTwin OS is envisioned as a digital agriculture ecosystem that uses technology and data to create smarter, more informed farming experiences.
+🌾 Digital Twin Experience
 
-This landing page serves as the visual introduction to the platform and its capabilities.
+<p align="center">
+  <img src="./public/screenshots/digital-twin.png" alt="AgriTwin Digital Twin" width="90%">
+</p>
 
-## 📌 Project Status
+🎬 Interactive Scrolling
 
-🚧 **Currently in development**
+<p align="center">
+  <img src="./public/screenshots/scrollytelling.png" alt="AgriTwin Scrollytelling" width="90%">
+</p>
 
-The landing page and interactive experience are being actively developed and refined.
+Add your actual screenshots to public/screenshots/ using the filenames above.
 
-## 👩‍💻 Author
+⸻
 
-**Aishi De**
+🧠 How It Works
 
-GitHub: [@aishide](https://github.com/aishide)
+AgriTwin combines scroll interaction + frame rendering + visual storytelling to create the core experience.
 
----
+flowchart LR
+    A[👤 User] --> B[🖱️ Scroll]
+    B --> C[🎞️ Frame Progress]
+    C --> D[🖼️ Canvas Rendering]
+    D --> E[🌾 Agricultural Scene]
+    E --> F[💡 Digital Twin Experience]
 
-⭐ If you find this project interesting, consider giving the repository a star!
+⸻
+
+🎯 Vision
+
+Agriculture is becoming increasingly connected with technology.
+
+AgriTwin explores how digital twins, interactive visualization, and intelligent systems can help communicate and shape the future of agriculture.
+
+Our vision:
+
+Make agriculture smarter, more connected, and more sustainable through technology.
+
+⸻
+
+🔮 Future Scope
+
+AgriTwin can be extended with:
+
+* 🤖 AI-powered crop recommendations
+* 🌦️ Real-time weather information
+* 💧 Smart irrigation monitoring
+* 🌱 Soil health monitoring
+* 🛰️ Satellite imagery
+* 📊 Real-time agricultural analytics
+* 📈 Crop yield prediction
+* 🔔 Smart alerts
+* 🧠 Predictive agriculture models
+* 📱 Mobile application
+
+⸻
+
+🤝 Contributing
+
+Contributions, ideas, and improvements are welcome.
+
+# Create a branch
+git checkout -b feature/your-feature
+# Make your changes
+git add .
+# Commit
+git commit -m "Add your feature"
+# Push
+git push origin feature/your-feature
+
+Then open a Pull Request.
+
+⸻
+
+🌍 Why AgriTwin?
+
+             🌱
+          AGRICULTURE
+              │
+              ▼
+        ┌─────────────┐
+        │   DATA      │
+        └──────┬──────┘
+               │
+               ▼
+        ┌─────────────┐
+        │ INTELLIGENCE│
+        └──────┬──────┘
+               │
+               ▼
+        ┌─────────────┐
+        │ DIGITAL TWIN│
+        └──────┬──────┘
+               │
+               ▼
+        🌾 SMART FARMING
+
+AgriTwin isn’t just a landing page.
+
+It is a visual representation of how agriculture and technology can come together to build a smarter future.
+
+⸻
+
+⭐ Project
+
+<p align="center">
+  <strong>🌱 AgriTwin</strong>
+  <br>
+  <i>Digital Intelligence for Smarter Agriculture</i>
+  <br><br>
+  Built with ❤️ using Next.js & TypeScript
+</p>
+<p align="center">
+  ⭐ Star the repository if you like the project!
+</p>
